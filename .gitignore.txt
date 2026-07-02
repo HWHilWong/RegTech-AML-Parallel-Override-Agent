@@ -1,0 +1,11 @@
+# 隔離所有數據檔案，防止敏感客戶資料 (PNI) 外洩
+*.csv
+*.xlsx
+*.txt
+
+# 隔離 Python 與 Jupyter 緩存
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.virtualenv/
+.env
