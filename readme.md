@@ -18,7 +18,7 @@ To mitigate **Model Under-detection (False Negatives)** and **Concept Drift**, t
 | Track A: Traditional Rule-Based | Track B: XGBoost ML Score | System Risk Tag | Operational Action Taken (HITL) |
 | :--- | :--- | :--- | :--- |
 | 🔴 **Hit** (Threshold Trigger) |  **High Score** (>= 0.80) | `🔴 Critical (Dual Hit)` | **Agentic Accelerator:** Triggers Local Llama 3 to auto-draft SAR narrative. Highest Priority. |
-| 🔴 **Hit** (Threshold Trigger) |  **Low Score** (< 0.50) | `延 Medium (Rule Override)` | **Regulatory Safety Net:** Traditional rules override AI. Routed immediately to the human investigation queue. |
+| 🔴 **Hit** (Threshold Trigger) |  **Low Score** (< 0.50) | ` Medium (Rule Override)` | **Regulatory Safety Net:** Traditional rules override AI. Routed immediately to the human investigation queue. |
 | ⚪ **No Hit** (Evaded Rules) |  **High Score** (>= 0.80) | `🟠 High (AI Flagged)` | **Smurfing Detection:** Captures structured/mule behaviors bypassing hard limits. Triggers SAR narrative. |
 | ⚪ **No Hit** (Evaded Rules) |  **Low Score** (< 0.50) | `🟢 Low (Cleared)` | **Automated Disposition:** Archived and subjected to 1% randomized monthly QA backtesting sampling. |
 
